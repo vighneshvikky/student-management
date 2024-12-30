@@ -1,0 +1,24 @@
+GET http://localhost:5000/api/students
+
+# Create a new student
+POST http://localhost:5000/api/students
+Content-Type: application/json
+
+{
+  "fullName": "John Doe",
+  "email": "john@example.com",
+  "age": 20,
+  "course": "Computer Science"
+}
+
+
+# Update student details
+PUT http://localhost:5000/api/students/123456789
+Content-Type: application/json
+
+{
+  "fullName": "Johnathan Doe",
+  "email": "johnathan@example.com",
+  "age": 21,
+  "course": "Software Engineering"
+}
